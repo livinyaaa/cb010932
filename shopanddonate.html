@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="donations.js"></script>
+    
+</head>
+<body>
+    <section id="shop">
+        <div class="title-text">
+            <p>SHOP</p>
+            <h1>Teas With Sense</h1>
+            </div>
+            <div class="product-box">
+                <div class="product">
+                    <img src="images/product 1.jpg">
+                    <div class="overlay"></div>
+                    <div class="product-descr">
+                        <h3>SKIN CARE PRODUCTS</h3>
+                        <hr>
+                        <p>A fast-acting gel for spot treatment of imperfections. Made from Tea-Tree- rich in anti-inflammatory properties. Soothes & relieves painful skin irritations. Reduce redness & swelling</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product 2.jpg">
+                    <div class="overlay"></div>
+                    <div class="product-descr">
+                        <h3>CEYLON TEA & YLANG AROMAVEDA SACHET</h3>
+                        <hr>
+                        <p>A luxury aroma sachet uniquely combining natural volcanic minerals with pure Ceylon tea and essential oils.</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product 3.jpg">
+                    <div class="overlay"></div>
+                    <div class="product-descr">
+                        <h3>GOURMET ICED TEA</h3>
+                        <hr>
+                        <p>Ceylon Tea infused with juicy island fruits, Hibiscus blossom & a hint Orange peel to make a delightful red brew for those chill-out moments under the Ceylon sun.</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product 4.jpg">
+                    <div class="overlay"></div>
+                    <div class="product-descr">
+                        <h3>LUXURY SOAP</h3>
+                        <hr>
+                        <p>A luxuriously creamy natural cleanser infused with a soothing blend of Green, White & Black Teas- rich in natural anti-oxidants & nutrients.</p>
+                    </div>
+                </div>
+            </div>
+
+
+<!--Donate form-->
+
+    <div class="donate">
+        <h1>Donate!</h1>
+        <form id="donate">
+            <div>
+                <label for="name">Full Name</label><br>
+                <input class="box1" type="text" name="name" id="donatorsname" placeholder="Enter your Name"><br>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input class="box1" type="email" name="email" id="donatorsemail" placeholder="Enter your Email"><br>
+            </div>
+            <div>
+                <label id="cardnumber">Card Number</label><br>
+                <input class="box1" type="text" name="number" id="donatorscardnumber" placeholder="0000 0000 0000 0000" maxlength="16" required><br>
+            </div>
+          
+            <div>
+                <label id="cardcvc">CVC</label><br>
+                <input class="box2" type="text" name="cvc" id="cvc" placeholder="cvc" maxlength="3" required><br>
+            </div>
+
+            <div>
+                <label for="amount">Select Amount of Donation</label><br>
+              <select id="donateamount">
+                  <option value="">--Select here--</option>
+                  <option value="0">Rs.100</option>
+                  <option value="1">Rs.250</option>
+                  <option value="2">Rs.500</option>
+                  <option value="3">Rs.1000</option>
+                  <option value="4">Rs.2500</option>
+                  <option value="5">Rs.5000</option>
+                  <option value="6">Rs.10000</option>     
+              </select>
+            </div>
+            <div>
+                <button id="donations" type="button">Donate</button>
+            </div>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

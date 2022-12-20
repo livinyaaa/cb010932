@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Museum</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tickets.js"></script>
+    
+</head>
+<body>
+    <section id="tea-museum">
+        <div class="title-text">
+        <p>CEYLON TEA MUSEUM</p>
+        <h1>A Heritage Of Excellence</h1>
+        </div>
+        <div class="main-text">
+        <h1>EXPERIENCE OVER 200 YEARS OF CEYLON TEA</h1>
+        <div class="excellent-heritage-descr">
+        <div class="excellent-heritage-text">
+            <p>Situated around four kilometres to the south of Kandy, the Ceylon Tea Museum occupies a building that was once the Hatane Tea Factory, constructed in 1925. The tea factory had been abandoned for over a decade before the Chairman of the Sri Lanka Tea Board, Clifford Ratwatte, incorporated the Ceylon Tea Museum into it in 1998. The Tea Board and the Planters’ Association of Sri Lanka ensured that the building was refurbished for its new designation as a museum, and it was formally opened to the public on the 1st of December in 2001.</p>
+        </div>
+        </div>
+        <div class="tea-museum-img">
+            <img src="images/museum.jpg">
+        </div>
+    
+        
+    
+        <div class="tea-museum-row">
+            <div class="tea-museum-col">
+                <div class="user">
+                    <img src="images/user.jpg">
+                    <div class="user-info">
+                        <h4>BEVERLY W</h4>
+                        <small>@beverly.w</small>
+                    </div>
+                </div>
+                <p>Brilliant!
+                    If you want to learn a bit about the history of tea in Sri Lanka this is a great place to visit. Lots of wonderful old machinery and all sorts of interesting displays. Fascinating and well worth a visit!</p>
+            </div>
+            <div class="tea-museum-col">
+                <div class="user">
+                    <img src="images/user 2.jpg">
+                    <div class="user-info">
+                        <h4>JANEY H</h4>
+                        <small>@janeyyh</small>
+                    </div>
+                </div>
+                <p>Interesting and worth seeing
+                    After a lot of Temples and relics it was interesting to see the history of tea and the way it is dried and sorted and graded - worth visiting and fun to have tea in their shop and of course buy tea!</p>
+            </div>
+            <div class="tea-museum-col">
+                <div class="user">
+                    <img src="images/user 3.jpg">
+                    <div class="user-info">
+                        <h4>RYAN L</h4>
+                        <small>@ryan.louis</small>
+                    </div>
+                </div>
+                <p>Not to be missed!
+                    This quiet museum is a hidden gem!! Absolutely underrated by guide books! It was fascinating to see traditional tea making equipment, and learn the history. Our entrance fee included a complementary guide who was professional and spoke excellent English. We finished with a delicious cup of tea in the café overlooking great views, and buying different types of tea from the shop for our friends and family.</p>
+            </div>
+        </div>
+        </div>
+        
+    
+
+
+<!-- Tickets: form -->
+
+    
+    <div id="form">
+        <h2>Exciting train tours across the country! Take a few minutes to fill this out and you're all set!</h2>
+        <form id="ticketForm">
+            
+            <!--Tickets form: ticket details-->
+
+            
+            <div>
+                <label for="firstname">First Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="lastname">Last Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="emailAdd">Email Address: </label>
+                <input type="text" id="emailAdd" name="emailAdd" required>
+            </div>
+            
+            <h4>Number of Guests on Tour</h4>
+                <div>
+                    <label for="Localadults">Local Adults: </label>
+                    <input type="number" id="Localadults" name="Localadults"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="childrenunder15">Local Children Under the Age of 15: </label>
+                    <input type="number" id="childrenunder15" name="childrenunder15"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="childrenunder6">Local Children Under the Age of 6: </label>
+                    <input type="number" id="childrenunder6" name="childrenunder6"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="Foreignadults">Foreign Adults: </label>
+                    <input type="number" id="Foreignadults" name="Foreignadults"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="Foreignchildren">Foreign Children: </label>
+                    <input type="number" id="Foreignchildren" name="Foreignchildren"  min="0" value="0">
+                </div>
+
+                <!--Tickets form: duration of the tour-->
+
+                <div id="durations">
+                <h4>Duration</h4>
+                <p>
+                    <label for="3hours">3 Hours</label>
+                    <input type="radio" id="3hours" name="duration" value="3hours">
+                </p>
+                <p>
+                    <label for="halfDay">Half Day</label>
+                    <input type="radio" id="halfDay" name="duration" value="halfDay">
+                </p>
+                <p>
+                    <label for="fullDay">Full Day</label>
+                    <input type="radio" id="fullDay" name="duration" value="fullDay">
+                </p>
+                <p>
+                    <label for="2days">Two Days</label>
+                    <input type="radio" id="2days" name="duration" value="2days">
+                </p>
+            
+            </div>
+
+            <!--Tickets form: optional facilities-->
+
+            <h2>Just a few more steps!</h2>
+            <div>
+                <label for="annualPass">Annual Passes (optional): </label>
+                <input type="number" id="annualPass" name="annualPass" min="0" value="0">
+            </div>
+            <div>
+                <label for="foodToken">Food Tokens (optional): </label>
+                <input type="number" id="foodToken" name="foodToken" min="0" value="0">
+            </div>
+
+
+            <!--Tickets form: buttons: 'add to order' and 'place order'-->
+
+            <div id="buttons">
+                <button type="submit" id="addToOrder" 
+                        name="addToOrder">Add to Order</button>
+                <button type="submit" id="placeToOrder" 
+                        name="placeToOrder">Place Order</button>
+                <button type="reset" id="reset">Reset Order</button>
+            </div>
+            
+        </form>
+            <div id="output">
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+                <p id="p6"></p>
+                <p id="p7"></p>
+                <p id="p8"></p>
+                <p id="p9"></p>
+                <p id="p10"></p>
+                <p id="p11"></p>
+            </div>
+
+    </div>
+
+    </section>
+
+
+</body>
+</html>
